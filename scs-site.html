@@ -37,7 +37,7 @@
         h2 {
             color: #0A2540;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .services {
@@ -49,27 +49,34 @@
         .service {
             background: white;
             border-radius: 10px;
-            overflow: hidden;
+            padding: 30px;
             box-shadow: 0 6px 20px rgba(0,0,0,0.08);
         }
 
-        .service img {
-            width: 100%;
-            height: 190px;
-            object-fit: cover;
-        }
-
-        .service-content {
-            padding: 25px;
-        }
-
-        .service-content h3 {
+        .service h3 {
             color: #0A2540;
-            margin-bottom: 10px;
         }
 
-        .service-content ul {
-            padding-left: 18px;
+        .service ul {
+            padding-left: 20px;
+        }
+
+        .cta {
+            background-color: #0A2540;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .cta a {
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 20px;
         }
 
         .form-box {
@@ -100,24 +107,6 @@
             cursor: pointer;
         }
 
-        .cta {
-            background-color: #0A2540;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .cta a {
-            background: #25D366;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-            display: inline-block;
-            margin: 10px;
-        }
-
         footer {
             background: #081c30;
             color: white;
@@ -137,95 +126,62 @@
 
 <section>
     <h2>Nos services</h2>
-    ...
-</section>
-
-<!-- NOUVEAU CONTENU AJOUTÉ -->
-<section>
-    <h2>Pourquoi nous choisir ?</h2>
-    <ul>
-        <li>Approche professionnelle</li>
-        <li>Expérience terrain</li>
-        <li>Vision locale et internationale</li>
-    </ul>
-</section>
-
 
     <div class="services">
 
-        <!-- BUSINESS PLAN -->
         <div class="service">
-            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="">
-            <div class="service-content">
-                <h3>Création de Business Plan</h3>
-                <p>Business plans professionnels adaptés aux standards locaux et internationaux.</p>
-                <ul>
-                    <li>Études de marché</li>
-                    <li>Prévisions financières</li>
-                    <li>Dossiers banques & investisseurs</li>
-                    <li>Projets Afrique & international</li>
-                </ul>
-            </div>
+            <h3>Création de Business Plan</h3>
+            <p>Nous élaborons des business plans professionnels destinés aux banques, investisseurs et partenaires.</p>
+            <ul>
+                <li>Étude de marché complète</li>
+                <li>Analyse financière et prévisions</li>
+                <li>Business Model et stratégie</li>
+                <li>Dossiers bancaires et investisseurs</li>
+            </ul>
         </div>
 
-        <!-- COMMUNICATION DIGITALE -->
         <div class="service">
-            <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf" alt="">
-            <div class="service-content">
-                <h3>Communication Digitale</h3>
-                <p>Valorisation de votre image de marque auprès d’un public multiculturel.</p>
-                <ul>
-                    <li>Réseaux sociaux</li>
-                    <li>Création de contenus</li>
-                    <li>Branding & e-réputation</li>
-                    <li>Public local & international</li>
-                </ul>
-            </div>
+            <h3>Communication Digitale</h3>
+            <p>Nous développons votre image et votre visibilité sur les plateformes digitales.</p>
+            <ul>
+                <li>Gestion des réseaux sociaux</li>
+                <li>Création de contenus professionnels</li>
+                <li>Stratégie de marque et e-réputation</li>
+                <li>Community management</li>
+            </ul>
         </div>
 
-        <!-- MARKETING DIGITAL -->
         <div class="service">
-            <img src="https://images.unsplash.com/photo-1557838923-2985c318be48" alt="">
-            <div class="service-content">
-                <h3>Marketing Digital</h3>
-                <p>Stratégies marketing orientées performance et acquisition de clients.</p>
-                <ul>
-                    <li>Publicité en ligne</li>
-                    <li>Génération de leads</li>
-                    <li>Analyse des données</li>
-                    <li>Marchés africains & internationaux</li>
-                </ul>
-            </div>
+            <h3>Marketing Digital</h3>
+            <p>Nous aidons votre entreprise à attirer et convertir des clients.</p>
+            <ul>
+                <li>Stratégie marketing digitale</li>
+                <li>Publicité en ligne (Meta, Google)</li>
+                <li>Génération de leads</li>
+                <li>Analyse des performances</li>
+            </ul>
         </div>
 
-        <!-- ÉVÉNEMENTIEL -->
         <div class="service">
-            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1" alt="">
-            <div class="service-content">
-                <h3>Événementiel</h3>
-                <p>Organisation d’événements professionnels et institutionnels.</p>
-                <ul>
-                    <li>Forums & conférences</li>
-                    <li>Lancements de produits</li>
-                    <li>Événements corporate</li>
-                    <li>Public multi-national</li>
-                </ul>
-            </div>
+            <h3>Événementiel</h3>
+            <p>Organisation et coordination d’événements professionnels et institutionnels.</p>
+            <ul>
+                <li>Forums et conférences</li>
+                <li>Lancements de produits</li>
+                <li>Foires et événements corporate</li>
+                <li>Gestion logistique et communication</li>
+            </ul>
         </div>
 
-        <!-- CONSEIL -->
         <div class="service">
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="">
-            <div class="service-content">
-                <h3>Conseil en Entrepreneuriat</h3>
-                <p>Accompagnement stratégique des entrepreneurs et entreprises.</p>
-                <ul>
-                    <li>Structuration de projets</li>
-                    <li>Création d’entreprise</li>
-                    <li>Conseil stratégique</li>
-                    <li>Vision Afrique & diaspora</li>
-                </ul>
-            </div>
+            <h3>Conseil en Entrepreneuriat</h3>
+            <p>Accompagnement stratégique des porteurs de projets et entreprises.</p>
+            <ul>
+                <li>Structuration de projets</li>
+                <li>Création et formalisation d’entreprise</li>
+                <li>Conseils stratégiques</li>
+                <li>Suivi et accompagnement</li>
+            </ul>
         </div>
 
     </div>
@@ -233,6 +189,7 @@
 
 <section>
     <h2>Demande de devis</h2>
+
     <div class="form-box">
         <form>
             <input type="text" placeholder="Nom complet" required>
@@ -246,46 +203,21 @@
 
 <section class="cta">
     <h2>Contact & Brochure</h2>
-    <p>Échangeons sur votre projet ou téléchargez notre brochure.</p>
+    <p>Contactez-nous directement ou téléchargez notre brochure.</p>
 
-    <!-- Remplace le numéro -->
-    <a href="https://wa.me/221770000000" target="_blank">WhatsApp</a>
-
-    <!-- Brochure PDF -->
-    <a href="brochure-scs.pdf" style="background:#ffffff;color:#0A2540;">
-        Télécharger la brochure
-    </a>
-</section>
-<section id="contact">
-    <h2>Contactez-nous</h2>
-
-    <div class="contact-box">
-        <p>
-            Vous avez un projet ou une question ?
-            Notre équipe est à votre écoute.
-        </p>
-
-        <p>
-            📧 Email :
-            <a href="mailto:senegalccomservices55@gmail.com">
-                senegalccomservices55@gmail.com
-            </a>
-        </p>
-
-        <p>
-            📱 WhatsApp :
-            <a href="https://wa.me/221770000000" target="_blank">
-                Cliquez ici pour discuter
-            </a>
-            <p>
-    📍 Adresse : Dakar, Sénégal
-</p>
-        </p>
-    </div>
+    <!-- 🔴 Remplace le numéro -->
+    <a href="https://wa.me/221770000000" target="_blank">Contacter sur WhatsApp</a>
+    <br><br>
+    <!-- 🔴 Remplace le lien par ta brochure PDF -->
+    <a href="brochure-scs.pdf" style="background:#ffffff;color:#0A2540;">Télécharger la brochure</a>
 </section>
 
 <footer>
     © 2025 Sénégal Communication Service – Tous droits réservés
 </footer>
 
+</body>
+</html>
+
+        }
 
