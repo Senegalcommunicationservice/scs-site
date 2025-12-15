@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sénégal Communication Service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(rgba(10,37,64,0.85), rgba(10,37,64,0.85)),
+            url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            color: #0A2540;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+
+        .service h3 {
+            color: #0A2540;
+        }
+
+        .service ul {
+            padding-left: 20px;
+        }
+
+        .cta {
+            background-color: #0A2540;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .cta a {
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .form-box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #0A2540;
+            color: white;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #081c30;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sénégal Communication Service</h1>
+    <p>Business Plan • Communication Digitale • Marketing • Événementiel • Conseil</p>
+</header>
+
+<section>
+    <h2>Nos services</h2>
+
+    <div class="services">
+
+        <div class="service">
+            <h3>Création de Business Plan</h3>
+            <p>Nous élaborons des business plans professionnels destinés aux banques, investisseurs et partenaires.</p>
+            <ul>
+                <li>Étude de marché complète</li>
+                <li>Analyse financière et prévisions</li>
+                <li>Business Model et stratégie</li>
+                <li>Dossiers bancaires et investisseurs</li>
+            </ul>
+        </div>
+
+        <div class="service">
+            <h3>Communication Digitale</h3>
+            <p>Nous développons votre image et votre visibilité sur les plateformes digitales.</p>
+            <ul>
+                <li>Gestion des réseaux sociaux</li>
+                <li>Création de contenus professionnels</li>
+                <li>Stratégie de marque et e-réputation</li>
+                <li>Community management</li>
+            </ul>
+        </div>
+
+        <div class="service">
+            <h3>Marketing Digital</h3>
+            <p>Nous aidons votre entreprise à attirer et convertir des clients.</p>
+            <ul>
+                <li>Stratégie marketing digitale</li>
+                <li>Publicité en ligne (Meta, Google)</li>
+                <li>Génération de leads</li>
+                <li>Analyse des performances</li>
+            </ul>
+        </div>
+
+        <div class="service">
+            <h3>Événementiel</h3>
+            <p>Organisation et coordination d’événements professionnels et institutionnels.</p>
+            <ul>
+                <li>Forums et conférences</li>
+                <li>Lancements de produits</li>
+                <li>Foires et événements corporate</li>
+                <li>Gestion logistique et communication</li>
+            </ul>
+        </div>
+
+        <div class="service">
+            <h3>Conseil en Entrepreneuriat</h3>
+            <p>Accompagnement stratégique des porteurs de projets et entreprises.</p>
+            <ul>
+                <li>Structuration de projets</li>
+                <li>Création et formalisation d’entreprise</li>
+                <li>Conseils stratégiques</li>
+                <li>Suivi et accompagnement</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Demande de devis</h2>
+
+    <div class="form-box">
+        <form>
+            <input type="text" placeholder="Nom complet" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Service souhaité">
+            <textarea rows="4" placeholder="Décrivez votre besoin"></textarea>
+            <button type="submit">Envoyer la demande</button>
+        </form>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Contact & Brochure</h2>
+    <p>Contactez-nous directement ou téléchargez notre brochure.</p>
+
+    <!-- 🔴 Remplace le numéro -->
+    <a href="https://wa.me/221770000000" target="_blank">Contacter sur WhatsApp</a>
+    <br><br>
+    <!-- 🔴 Remplace le lien par ta brochure PDF -->
+    <a href="brochure-scs.pdf" style="background:#ffffff;color:#0A2540;">Télécharger la brochure</a>
+</section>
+
+<footer>
+    © 2025 Sénégal Communication Service – Tous droits réservés
+</footer>
+
+</body>
+</html>
