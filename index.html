@@ -124,6 +124,12 @@
         }
     </style>
 </head>
+<script>
+function toggleService(service) {
+    const details = service.querySelector(".service-details");
+    details.style.display = details.style.display === "block" ? "none" : "block";
+}
+</script>
 
 <body>
 
@@ -135,67 +141,192 @@
 <section>
     <h2>Nos services</h2>
 
-    <div class="services">
+   <div class="service" onclick="toggleService(this)">
+    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="">
+    <h3>Création de Business Plan</h3>
+    <p>Business plans professionnels destinés aux banques, investisseurs et partenaires.</p>
 
-        <div class="service">
-            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="">
-            <h3>Création de Business Plan</h3>
-            <p>Business plans professionnels destinés aux banques, investisseurs et partenaires.</p>
-            <ul>
-                <li>Étude de marché</li>
-                <li>Prévisions financières</li>
-                <li>Business Model</li>
-                <li>Dossiers investisseurs</li>
-            </ul>
-        </div>
+    <ul>
+        <li>Étude de marché</li>
+        <li>Prévisions financières</li>
+        <li>Business Model</li>
+        <li>Dossiers investisseurs</li>
+    </ul>
 
-        <div class="service">
-            <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf" alt="">
-            <h3>Communication Digitale</h3>
-            <p>Développement de votre image et visibilité digitale.</p>
-            <ul>
-                <li>Réseaux sociaux</li>
-                <li>Création de contenus</li>
-                <li>E-réputation</li>
-                <li>Community management</li>
-            </ul>
-        </div>
+    <div class="service-details">
+        <p>
+            Chez Sénégal Communication Service
 
-        <div class="service">
-            <img src="https://images.unsplash.com/photo-1557838923-2985c318be48" alt="">
-            <h3>Marketing Digital</h3>
-            <p>Stratégies orientées performance et acquisition client.</p>
-            <ul>
-                <li>Publicité en ligne</li>
-                <li>Génération de leads</li>
-                <li>Analyse des données</li>
-                <li>Optimisation ROI</li>
-            </ul>
-        </div>
 
-        <div class="service">
-            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1" alt="">
-            <h3>Événementiel</h3>
-            <p>Organisation d’événements professionnels et institutionnels.</p>
-            <ul>
-                <li>Forums & conférences</li>
-                <li>Lancements de produits</li>
-                <li>Événements corporate</li>
-                <li>Gestion complète</li>
-            </ul>
-        </div>
+        <div class="service" onclick="toggleService(this)">
+    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="">
+    <h3>Création de Business Plan</h3>
+    <p>Business plans professionnels destinés aux banques, investisseurs et partenaires.</p>
 
-        <div class="service">
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="">
-            <h3>Conseil en Entrepreneuriat</h3>
-            <p>Accompagnement stratégique des entrepreneurs.</p>
-            <ul>
-                <li>Structuration de projets</li>
-                <li>Création d’entreprise</li>
-                <li>Conseils stratégiques</li>
-                <li>Suivi personnalisé</li>
-            </ul>
-        </div>
+    <ul>
+        <li>Étude de marché</li>
+        <li>Prévisions financières</li>
+        <li>Business Model</li>
+        <li>Dossiers investisseurs</li>
+    </ul>
+
+    <div class="service-details">
+        <h4>À propos du service</h4>
+        <p>
+            Le business plan est un document stratégique indispensable pour structurer
+            un projet, convaincre des partenaires financiers et sécuriser des financements.
+            Sénégal Communication Service accompagne les entrepreneurs avec une approche
+            claire, réaliste et adaptée au contexte sénégalais et international.
+        </p>
+
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Réunion professionnelle">
+
+        <h4>Notre accompagnement</h4>
+        <p>
+            Nous analysons votre idée, votre marché et vos objectifs afin de produire
+            un document professionnel, compréhensible et crédible.
+        </p>
+
+        <ul>
+            <li>Analyse du projet et du secteur</li>
+            <li>Étude de marché ciblée</li>
+            <li>Construction du modèle économique</li>
+            <li>Prévisions financières détaillées</li>
+            <li>Rédaction finale prête à être présentée</li>
+        </ul>
+    </div>
+</div>
+
+<div class="service" onclick="toggleService(this)">
+    <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf" alt="">
+    <h3>Communication Digitale</h3>
+    <p>Développement de votre image et de votre visibilité sur les plateformes digitales.</p>
+
+    <ul>
+        <li>Réseaux sociaux</li>
+        <li>Création de contenus</li>
+        <li>E-réputation</li>
+        <li>Community management</li>
+    </ul>
+
+    <div class="service-details">
+        <h4>À propos du service</h4>
+        <p>
+            La communication digitale permet aux entreprises de renforcer leur image,
+            de toucher leur cible et de créer une relation durable avec leur audience.
+            Sénégal Communication Service met en place une communication cohérente,
+            professionnelle et adaptée à votre secteur.
+        </p>
+
+        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0" alt="Communication digitale">
+
+        <h4>Notre accompagnement</h4>
+        <ul>
+            <li>Définition de la stratégie digitale</li>
+            <li>Gestion des réseaux sociaux</li>
+            <li>Création de contenus visuels et textuels</li>
+            <li>Suivi et amélioration de la visibilité</li>
+        </ul>
+    </div>
+</div>
+
+
+        <div class="service" onclick="toggleService(this)">
+    <img src="https://images.unsplash.com/photo-1557838923-2985c318be48" alt="">
+    <h3>Marketing Digital</h3>
+    <p>Stratégies orientées performance et acquisition de clients.</p>
+
+    <ul>
+        <li>Publicité en ligne</li>
+        <li>Génération de leads</li>
+        <li>Analyse des données</li>
+        <li>Optimisation ROI</li>
+    </ul>
+
+    <div class="service-details">
+        <h4>À propos du service</h4>
+        <p>
+            Le marketing digital permet d’attirer, convertir et fidéliser des clients
+            grâce à des actions mesurables et efficaces.
+            Nous mettons en place des stratégies orientées résultats.
+        </p>
+
+        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312" alt="Marketing digital">
+
+        <h4>Notre accompagnement</h4>
+        <ul>
+            <li>Définition des objectifs marketing</li>
+            <li>Mise en place de campagnes publicitaires</li>
+            <li>Suivi des performances</li>
+            <li>Optimisation continue des actions</li>
+        </ul>
+    </div>
+</div>
+
+<div class="service" onclick="toggleService(this)">
+    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1" alt="">
+    <h3>Événementiel</h3>
+    <p>Organisation d’événements professionnels et institutionnels.</p>
+
+    <ul>
+        <li>Forums & conférences</li>
+        <li>Lancements de produits</li>
+        <li>Événements corporate</li>
+        <li>Gestion complète</li>
+    </ul>
+
+    <div class="service-details">
+        <h4>À propos du service</h4>
+        <p>
+            L’événementiel est un puissant outil de communication et de visibilité.
+            Sénégal Communication Service organise des événements structurés,
+            professionnels et adaptés à vos objectifs.
+        </p>
+
+        <img src="https://images.unsplash.com/photo-1515169067865-5387ec356754" alt="Événement professionnel">
+
+        <h4>Notre accompagnement</h4>
+        <ul>
+            <li>Conception et planification</li>
+            <li>Gestion logistique</li>
+            <li>Coordination des intervenants</li>
+            <li>Communication avant et après l’événement</li>
+        </ul>
+    </div>
+</div>
+
+<div class="service" onclick="toggleService(this)">
+    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="">
+    <h3>Conseil en Entrepreneuriat</h3>
+    <p>Accompagnement stratégique des entrepreneurs et porteurs de projets.</p>
+
+    <ul>
+        <li>Structuration de projets</li>
+        <li>Création d’entreprise</li>
+        <li>Conseils stratégiques</li>
+        <li>Suivi personnalisé</li>
+    </ul>
+
+    <div class="service-details">
+        <h4>À propos du service</h4>
+        <p>
+            Lancer ou développer une entreprise nécessite des décisions stratégiques.
+            Nous accompagnons les entrepreneurs à chaque étape avec des conseils
+            pratiques, clairs et adaptés au contexte local.
+        </p>
+
+        <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca" alt="Entrepreneuriat">
+
+        <h4>Notre accompagnement</h4>
+        <ul>
+            <li>Structuration et formalisation du projet</li>
+            <li>Conseils en gestion et stratégie</li>
+            <li>Orientation administrative</li>
+            <li>Suivi et accompagnement continu</li>
+        </ul>
+    </div>
+</div>
+
 
     </div>
 </section>
@@ -230,3 +361,21 @@
 
 </body>
 </html>
+.service {
+    cursor: pointer;
+}
+
+.service-details {
+    display: none;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.service-details img {
+    width: 100%;
+    max-width: 500px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
