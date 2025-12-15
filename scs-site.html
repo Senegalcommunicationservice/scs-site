@@ -5,49 +5,8 @@
     <title>Sénégal Communication Service</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>.accordion-item {
-    margin-bottom: 15px;
-}
-
-.accordion-title {
-    width: 100%;
-    background-color: #0A2540;
-    color: white;
-    padding: 18px;
-    font-size: 18px;
-    border: none;
-    text-align: left;
-    cursor: pointer;
-    border-radius: 6px;
-}
-
-.accordion-content {
-    display: none;
-    background: white;
-    padding: 25px;
-    border-radius: 6px;
-    margin-top: 10px;
-}
-
-.accordion-content img {
-    width: 100%;
-    max-width: 500px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-        body <script>
-const titles = document.querySelectorAll(".accordion-title");
-
-titles.forEach(title => {
-    title.addEventListener("click", () => {
-        const content = title.nextElementSibling;
-        content.style.display =
-            content.style.display === "block" ? "none" : "block";
-    });
-});
-</script>
- {
+    <style>
+        body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f6f9;
@@ -177,111 +136,28 @@ titles.forEach(title => {
 </header>
 
 <section>
-    <section>
     <h2>Nos services</h2>
-
-    <div class="accordion">
-
-        <!-- BUSINESS PLAN -->
-        <div class="accordion-item">
-            <button class="accordion-title">Création de Business Plan</button>
-            <div class="accordion-content">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Meeting_room.jpg/640px-Meeting_room.jpg">
-                <p>
-                    Nous élaborons des business plans clairs, structurés et adaptés
-                    au contexte sénégalais et international, pour les banques,
-                    investisseurs et partenaires.
-                </p>
-                <ul>
-                    <li>Étude de marché</li>
-                    <li>Prévisions financières</li>
-                    <li>Dossiers bancaires</li>
-                    <li>Accompagnement personnalisé</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- COMMUNICATION DIGITALE -->
-        <div class="accordion-item">
-            <button class="accordion-title">Communication Digitale</button>
-            <div class="accordion-content">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Social_media_icons.png/640px-Social_media_icons.png">
-                <p>
-                    Nous développons votre visibilité et votre image de marque
-                    sur les réseaux sociaux et plateformes digitales.
-                </p>
-                <ul>
-                    <li>Gestion des réseaux sociaux</li>
-                    <li>Création de contenus</li>
-                    <li>Image de marque</li>
-                    <li>Public local et international</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- MARKETING DIGITAL -->
-        <div class="accordion-item">
-            <button class="accordion-title">Marketing Digital</button>
-            <div class="accordion-content">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Marketing_strategy.jpg/640px-Marketing_strategy.jpg">
-                <p>
-                    Des stratégies orientées résultats pour attirer,
-                    convertir et fidéliser vos clients.
-                </p>
-                <ul>
-                    <li>Publicité en ligne</li>
-                    <li>Génération de leads</li>
-                    <li>Analyse des performances</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- ÉVÉNEMENTIEL -->
-        <div class="accordion-item">
-            <button class="accordion-title">Événementiel</button>
-            <div class="accordion-content">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Conference_hall.jpg/640px-Conference_hall.jpg">
-                <p>
-                    Organisation d’événements professionnels, institutionnels
-                    et corporate.
-                </p>
-                <ul>
-                    <li>Forums & conférences</li>
-                    <li>Lancements de produits</li>
-                    <li>Événements d’entreprise</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- CONSEIL -->
-        <div class="accordion-item">
-            <button class="accordion-title">Conseil en Entrepreneuriat</button>
-            <div class="accordion-content">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Business_consulting.jpg/640px-Business_consulting.jpg">
-                <p>
-                    Accompagnement stratégique des entrepreneurs
-                    et porteurs de projets.
-                </p>
-                <ul>
-                    <li>Structuration de projets</li>
-                    <li>Création d’entreprise</li>
-                    <li>Conseil stratégique</li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
+    ...
 </section>
 
+<!-- NOUVEAU CONTENU AJOUTÉ -->
+<section>
+    <h2>Pourquoi nous choisir ?</h2>
+    <ul>
+        <li>Approche professionnelle</li>
+        <li>Expérience terrain</li>
+        <li>Vision locale et internationale</li>
+    </ul>
+</section>
+
+
+    <div class="services">
 
         <!-- BUSINESS PLAN -->
         <div class="service">
             <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="">
             <div class="service-content">
-               <h3>
-    <a href="business-plan.html">Création de Business Plan</a>
-</h3>
-
+                <h3>Création de Business Plan</h3>
                 <p>Business plans professionnels adaptés aux standards locaux et internationaux.</p>
                 <ul>
                     <li>Études de marché</li>
@@ -357,12 +233,6 @@ titles.forEach(title => {
 
 <section>
     <h2>Demande de devis</h2>
-<div class="form-box">
-    <form>
-        ...
-    </form>
-</div>
-
     <div class="form-box">
         <form>
             <input type="text" placeholder="Nom complet" required>
@@ -386,8 +256,7 @@ titles.forEach(title => {
         Télécharger la brochure
     </a>
 </section>
-
-<footer><section id="contact">
+<section id="contact">
     <h2>Contactez-nous</h2>
 
     <div class="contact-box">
@@ -402,17 +271,21 @@ titles.forEach(title => {
                 senegalccomservices55@gmail.com
             </a>
         </p>
-<p>
+
+        <p>
+            📱 WhatsApp :
+            <a href="https://wa.me/221770000000" target="_blank">
+                Cliquez ici pour discuter
+            </a>
+            <p>
     📍 Adresse : Dakar, Sénégal
 </p>
 
-        <p>
-         
-            </a>
         </p>
     </div>
 </section>
 
+<footer>
     © 2025 Sénégal Communication Service – Tous droits réservés
 </footer>
 
