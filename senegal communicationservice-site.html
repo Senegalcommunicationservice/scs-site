@@ -5,49 +5,8 @@
     <title>Sénégal Communication Service</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>.accordion-item {
-    margin-bottom: 15px;
-}
-
-.accordion-title {
-    width: 100%;
-    background-color: #0A2540;
-    color: white;
-    padding: 18px;
-    font-size: 18px;
-    border: none;
-    text-align: left;
-    cursor: pointer;
-    border-radius: 6px;
-}
-
-.accordion-content {
-    display: none;
-    background: white;
-    padding: 25px;
-    border-radius: 6px;
-    margin-top: 10px;
-}
-
-.accordion-content img {
-    width: 100%;
-    max-width: 500px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-        body <script>
-const titles = document.querySelectorAll(".accordion-title");
-
-titles.forEach(title => {
-    title.addEventListener("click", () => {
-        const content = title.nextElementSibling;
-        content.style.display =
-            content.style.display === "block" ? "none" : "block";
-    });
-});
-</script>
- {
+    <style>
+        body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f6f9;
@@ -78,7 +37,7 @@ titles.forEach(title => {
         h2 {
             color: #0A2540;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .services {
@@ -90,27 +49,34 @@ titles.forEach(title => {
         .service {
             background: white;
             border-radius: 10px;
-            overflow: hidden;
+            padding: 30px;
             box-shadow: 0 6px 20px rgba(0,0,0,0.08);
         }
 
-        .service img {
-            width: 100%;
-            height: 190px;
-            object-fit: cover;
-        }
-
-        .service-content {
-            padding: 25px;
-        }
-
-        .service-content h3 {
+        .service h3 {
             color: #0A2540;
-            margin-bottom: 10px;
         }
 
-        .service-content ul {
-            padding-left: 18px;
+        .service ul {
+            padding-left: 20px;
+        }
+
+        .cta {
+            background-color: #0A2540;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .cta a {
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            display: inline-block;
+            margin-top: 20px;
         }
 
         .form-box {
@@ -141,24 +107,6 @@ titles.forEach(title => {
             cursor: pointer;
         }
 
-        .cta {
-            background-color: #0A2540;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .cta a {
-            background: #25D366;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-            display: inline-block;
-            margin: 10px;
-        }
-
         footer {
             background: #081c30;
             color: white;
@@ -177,179 +125,63 @@ titles.forEach(title => {
 </header>
 
 <section>
-    <section>
     <h2>Nos services</h2>
 
-    <div class="accordion">
+    <div class="services">
 
-        <!-- BUSINESS PLAN -->
-        <div class="accordion-item">
-            <button class="accordion-title">Création de Business Plan</button>
-            <div class="accordion-content">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Meeting_room.jpg/640px-Meeting_room.jpg">
-                <p>
-                    Nous élaborons des business plans clairs, structurés et adaptés
-                    au contexte sénégalais et international, pour les banques,
-                    investisseurs et partenaires.
-                </p>
-                <ul>
-                    <li>Étude de marché</li>
-                    <li>Prévisions financières</li>
-                    <li>Dossiers bancaires</li>
-                    <li>Accompagnement personnalisé</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- COMMUNICATION DIGITALE -->
-        <div class="accordion-item">
-            <button class="accordion-title">Communication Digitale</button>
-            <div class="accordion-content">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Social_media_icons.png/640px-Social_media_icons.png">
-                <p>
-                    Nous développons votre visibilité et votre image de marque
-                    sur les réseaux sociaux et plateformes digitales.
-                </p>
-                <ul>
-                    <li>Gestion des réseaux sociaux</li>
-                    <li>Création de contenus</li>
-                    <li>Image de marque</li>
-                    <li>Public local et international</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- MARKETING DIGITAL -->
-        <div class="accordion-item">
-            <button class="accordion-title">Marketing Digital</button>
-            <div class="accordion-content">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Marketing_strategy.jpg/640px-Marketing_strategy.jpg">
-                <p>
-                    Des stratégies orientées résultats pour attirer,
-                    convertir et fidéliser vos clients.
-                </p>
-                <ul>
-                    <li>Publicité en ligne</li>
-                    <li>Génération de leads</li>
-                    <li>Analyse des performances</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- ÉVÉNEMENTIEL -->
-        <div class="accordion-item">
-            <button class="accordion-title">Événementiel</button>
-            <div class="accordion-content">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Conference_hall.jpg/640px-Conference_hall.jpg">
-                <p>
-                    Organisation d’événements professionnels, institutionnels
-                    et corporate.
-                </p>
-                <ul>
-                    <li>Forums & conférences</li>
-                    <li>Lancements de produits</li>
-                    <li>Événements d’entreprise</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- CONSEIL -->
-        <div class="accordion-item">
-            <button class="accordion-title">Conseil en Entrepreneuriat</button>
-            <div class="accordion-content">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Business_consulting.jpg/640px-Business_consulting.jpg">
-                <p>
-                    Accompagnement stratégique des entrepreneurs
-                    et porteurs de projets.
-                </p>
-                <ul>
-                    <li>Structuration de projets</li>
-                    <li>Création d’entreprise</li>
-                    <li>Conseil stratégique</li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-        <!-- BUSINESS PLAN -->
         <div class="service">
-            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="">
-            <div class="service-content">
-               <h3>
-    <a href="business-plan.html">Création de Business Plan</a>
-</h3>
-
-                <p>Business plans professionnels adaptés aux standards locaux et internationaux.</p>
-                <ul>
-                    <li>Études de marché</li>
-                    <li>Prévisions financières</li>
-                    <li>Dossiers banques & investisseurs</li>
-                    <li>Projets Afrique & international</li>
-                </ul>
-            </div>
+            <h3>Création de Business Plan</h3>
+            <p>Nous élaborons des business plans professionnels destinés aux banques, investisseurs et partenaires.</p>
+            <ul>
+                <li>Étude de marché complète</li>
+                <li>Analyse financière et prévisions</li>
+                <li>Business Model et stratégie</li>
+                <li>Dossiers bancaires et investisseurs</li>
+            </ul>
         </div>
 
-        <!-- COMMUNICATION DIGITALE -->
         <div class="service">
-            <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf" alt="">
-            <div class="service-content">
-                <h3>Communication Digitale</h3>
-                <p>Valorisation de votre image de marque auprès d’un public multiculturel.</p>
-                <ul>
-                    <li>Réseaux sociaux</li>
-                    <li>Création de contenus</li>
-                    <li>Branding & e-réputation</li>
-                    <li>Public local & international</li>
-                </ul>
-            </div>
+            <h3>Communication Digitale</h3>
+            <p>Nous développons votre image et votre visibilité sur les plateformes digitales.</p>
+            <ul>
+                <li>Gestion des réseaux sociaux</li>
+                <li>Création de contenus professionnels</li>
+                <li>Stratégie de marque et e-réputation</li>
+                <li>Community management</li>
+            </ul>
         </div>
 
-        <!-- MARKETING DIGITAL -->
         <div class="service">
-            <img src="https://images.unsplash.com/photo-1557838923-2985c318be48" alt="">
-            <div class="service-content">
-                <h3>Marketing Digital</h3>
-                <p>Stratégies marketing orientées performance et acquisition de clients.</p>
-                <ul>
-                    <li>Publicité en ligne</li>
-                    <li>Génération de leads</li>
-                    <li>Analyse des données</li>
-                    <li>Marchés africains & internationaux</li>
-                </ul>
-            </div>
+            <h3>Marketing Digital</h3>
+            <p>Nous aidons votre entreprise à attirer et convertir des clients.</p>
+            <ul>
+                <li>Stratégie marketing digitale</li>
+                <li>Publicité en ligne (Meta, Google)</li>
+                <li>Génération de leads</li>
+                <li>Analyse des performances</li>
+            </ul>
         </div>
 
-        <!-- ÉVÉNEMENTIEL -->
         <div class="service">
-            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1" alt="">
-            <div class="service-content">
-                <h3>Événementiel</h3>
-                <p>Organisation d’événements professionnels et institutionnels.</p>
-                <ul>
-                    <li>Forums & conférences</li>
-                    <li>Lancements de produits</li>
-                    <li>Événements corporate</li>
-                    <li>Public multi-national</li>
-                </ul>
-            </div>
+            <h3>Événementiel</h3>
+            <p>Organisation et coordination d’événements professionnels et institutionnels.</p>
+            <ul>
+                <li>Forums et conférences</li>
+                <li>Lancements de produits</li>
+                <li>Foires et événements corporate</li>
+                <li>Gestion logistique et communication</li>
+            </ul>
         </div>
 
-        <!-- CONSEIL -->
         <div class="service">
-            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="">
-            <div class="service-content">
-                <h3>Conseil en Entrepreneuriat</h3>
-                <p>Accompagnement stratégique des entrepreneurs et entreprises.</p>
-                <ul>
-                    <li>Structuration de projets</li>
-                    <li>Création d’entreprise</li>
-                    <li>Conseil stratégique</li>
-                    <li>Vision Afrique & diaspora</li>
-                </ul>
-            </div>
+            <h3>Conseil en Entrepreneuriat</h3>
+            <p>Accompagnement stratégique des porteurs de projets et entreprises.</p>
+            <ul>
+                <li>Structuration de projets</li>
+                <li>Création et formalisation d’entreprise</li>
+                <li>Conseils stratégiques</li>
+                <li>Suivi et accompagnement</li>
+            </ul>
         </div>
 
     </div>
@@ -357,11 +189,6 @@ titles.forEach(title => {
 
 <section>
     <h2>Demande de devis</h2>
-<div class="form-box">
-    <form>
-        ...
-    </form>
-</div>
 
     <div class="form-box">
         <form>
@@ -376,47 +203,18 @@ titles.forEach(title => {
 
 <section class="cta">
     <h2>Contact & Brochure</h2>
-    <p>Échangeons sur votre projet ou téléchargez notre brochure.</p>
+    <p>Contactez-nous directement ou téléchargez notre brochure.</p>
 
-    <!-- Remplace le numéro -->
-    <a href="https://wa.me/221770000000" target="_blank">WhatsApp</a>
-
-    <!-- Brochure PDF -->
-    <a href="brochure-scs.pdf" style="background:#ffffff;color:#0A2540;">
-        Télécharger la brochure
-    </a>
+    <!-- 🔴 Remplace le numéro -->
+    <a href="https://wa.me/221770000000" target="_blank">Contacter sur WhatsApp</a>
+    <br><br>
+    <!-- 🔴 Remplace le lien par ta brochure PDF -->
+    <a href="brochure-scs.pdf" style="background:#ffffff;color:#0A2540;">Télécharger la brochure</a>
 </section>
 
-<footer><section id="contact">
-    <h2>Contactez-nous</h2>
-
-    <div class="contact-box">
-        <p>
-            Vous avez un projet ou une question ?
-            Notre équipe est à votre écoute.
-        </p>
-
-        <p>
-            📧 Email :
-            <a href="mailto:senegalccomservices55@gmail.com">
-                senegalccomservices55@gmail.com
-            </a>
-        </p>
-<p>
-    📍 Adresse : Dakar, Sénégal
-</p>
-
-        <p>
-         
-            </a>
-        </p>
-    </div>
-</section>
-
+<footer>
     © 2025 Sénégal Communication Service – Tous droits réservés
 </footer>
 
 </body>
 </html>
-
-
